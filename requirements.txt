@@ -1,5 +1,0 @@
-# Dependencias del agente ADK "Asistente de Notas".
-# Si lo integras con agent-starter-pack, esas dependencias se gestionan en el
-# pyproject.toml que genera el pack; añade ahí 'requests' si no está.
-google-adk>=1.0.0
-requests>=2.31.0
