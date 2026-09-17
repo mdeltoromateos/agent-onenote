@@ -1,0 +1,828 @@
+{
+  "eval_set_result_id": "app_onenote_spanish_eval_1785152733.670011",
+  "eval_set_result_name": "app_onenote_spanish_eval_1785152733.670011",
+  "eval_set_id": "onenote_spanish_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "onenote_spanish_eval",
+      "eval_set_id": "onenote_spanish_eval",
+      "eval_id": "extraer_tareas_con_fecha",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8,
+            "judgeModelOptions": {
+              "judgeModel": "gemini-2.5-flash",
+              "numSamples": 1
+            },
+            "rubrics": [
+              {
+                "rubricId": "relevance",
+                "rubricContent": {
+                  "textProperty": "The response directly addresses the user's query."
+                }
+              },
+              {
+                "rubricId": "helpfulness",
+                "rubricContent": {
+                  "textProperty": "The response is helpful and provides useful information."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "relevance",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "helpfulness",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-83f79afb-ef44-4d8e-ac6d-6ea1327a92b7",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Busca notas de 'Sprint 24' y extrae tareas pendientes con responsable y fecha límite si aparecen.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "No se pudo acceder a OneNote. Por favor, revisa el token de acceso (MS_GRAPH_REFRESH_TOKEN) para que pueda buscar las notas de 'Sprint 24'.",
+                  "thought": null,
+                  "thought_signature": "Co0DAY89a1-7no-a13Ft8dZlFigK6ZEt2h586SFetxMRYaYn5Xk8bzUUJ_U_wyNoy4w_y-F9PFi47-ZXN5VvNZaYYdAoa6jm3vlglB5xEYT5O7V2CO-DOWWiSARap62bhHXu-AKfMI3AgTLGIPiIAUg9Xilnm106QYb-BaPLfKdm-CdNWASE5h8mZ586GXdvrzJjcPzBq62wDGPq4gfaw3tbLGq6cQdFIzqUePWRrxUo7KQKOXrkiycS8SRyG06YNXgAcOyTJcGGZOdDNKrzSMwrLDM3slgTjvRRAnIZgZxL2Yp7k5c5Ue8xesHXPrBBu-qR2WQci0mQ-IeSigzwF0NYIG3QqPtO0v-RTS0XdZWdE_b8RCU88G1IghRBroNyFy9FinU4WX3cmkV8BfSz9PQHsN2vxwZN6VNx7IyX6S8Zhc_aUb80UZh__fBJ2VEREKO3aDWJ5qMck2g_8wY6J5nfTU26Vz8agl7cTrO4PWEmZQBMlkCGAC9TLlNuvrrvyeq7lLh2BhauUXhpMF_gug==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "asistente_notas",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-42cce0cd-cf47-4e42-9cc7-2c0120afbb67",
+                          "args": {
+                            "search": "Sprint 24"
+                          },
+                          "name": "list_pages",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "CukEAY89a1_V3uO2yb0eqXFFUVNOoeQaAK8DYAlVbzzQwVYYC3UNSR-xR3lfyL-uD_P2MffEfHiJswKMuNABUzp39mnWrFIVgKTF4LJDqVpGN4nqdMvwmH9zH43_c-_MegSEr2vnaJlrNAj34X8DZj3dRyB3-WucMqcMLbuPWw9iAJp6MYKPwr_7rGnIrPhH5N0DjfY_hwJ_pRaMXSxjkLRpaEuywLHYn4UGzEWBl-ZUYUnp4KoHWypxB7lyriix8rlRujDPHTxMhyrUOlUHNcShweV6TfWE6OCx6TkQtPHRveLCaZT7rp3VYC5uXIcJVIkSsc4RVZnTnhgWPelozHOLWf9yGRGNbnG18itEI9M8SwODkNlsaNo56v63lOHMzfVwed_cptyeFrUWmxD-08ER7TcHQeYhs_phXNxETuYxlEKAgwFaKk9umRD9XCdoKecZ7u5orD0n89UA1DWz7cudSQPeSjg1DgqeKHjw7MZPhip_5ObCAmhLGK-LCDHRgabI9j79TnONNaXAL_nC32tPBTY7-lfmbhe6-PjB3HIF-w_LM1F6HC1_xqG8MEtG_nskCBk-j1oABLrQoQXtjGMUBdsbvObUT88iykTsnEy1gpB7vpWolmn75l3PuvAGwd8b4vjnjYinwzMJo15jN6SDdecB0Ffzz-aOaZREU8PLTU3ctFNoNkIGPsXmoVxJYeEHiSPbKKXp9UJrGt9Zah73ABmK6lMTsPeiu-vEbVhrPmzTuMjBqkGP0PH2GN1_WniKVDaZt8UHTNCBjJlYxdt92kWaNVKpMVHOr1o3P-iIFDNuoGs8Jb3Ie3c=",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "asistente_notas",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-42cce0cd-cf47-4e42-9cc7-2c0120afbb67",
+                          "name": "list_pages",
+                          "response": {
+                            "status": "error",
+                            "error_message": "No se pudo obtener acceso a OneNote (revisar MS_GRAPH_REFRESH_TOKEN)."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1785152699.2114966,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "asistente_notas": {
+                  "name": "asistente_notas",
+                  "instructions": "Eres \"Asistente de Notas\", un asistente que responde preguntas\ndel usuario basándote EXCLUSIVAMENTE en el contenido de sus cuadernos de OneNote.\n\nCómo trabajar:\n1. Si necesitas saber qué hay disponible, usa `list_notebooks` o `list_pages`.\n   Puedes pasar un término a `list_pages` para filtrar por título.\n2. Antes de responder, identifica las páginas relevantes y lee su contenido con\n   `get_page_content`. No respondas de memoria: lee primero.\n3. Responde en español, de forma concreta, y cita siempre el título de las\n   páginas que has usado como fuente.\n4. Si la información no aparece en las notas, dilo con claridad; nunca inventes.\n\nNo reveles el token ni detalles técnicos internos al usuario.\n\n\nYou are an agent. Your internal name is \"asistente_notas\". The description about you is \"Responde preguntas sobre el contenido de OneNote del usuario.\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Lista los cuadernos de OneNote.",
+                          "name": "list_notebooks",
+                          "parameters": null,
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Lista paginas de OneNote, opcionalmente filtradas por titulo.",
+                          "name": "list_pages",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "search": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": "",
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Devuelve texto plano del contenido de una pagina de OneNote.",
+                          "name": "get_page_content",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "page_id": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "page_id"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Busca notas de 'Sprint 24' y extrae tareas pendientes con responsable y fecha límite si aparecen.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": null,
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8,
+                "judgeModelOptions": {
+                  "judgeModel": "gemini-2.5-flash",
+                  "numSamples": 1
+                },
+                "rubrics": [
+                  {
+                    "rubricId": "relevance",
+                    "rubricContent": {
+                      "textProperty": "The response directly addresses the user's query."
+                    }
+                  },
+                  {
+                    "rubricId": "helpfulness",
+                    "rubricContent": {
+                      "textProperty": "The response is helpful and provides useful information."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "relevance",
+                    "rationale": "The user asked the agent to search for notes. The agent attempted to do so using the `list_pages` tool. The tool call failed, and the final answer directly informs the user about this failure and why it couldn't perform the requested search. This directly addresses the user's query by explaining the inability to fulfill it.",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "helpfulness",
+                    "rationale": "The agent's response clearly states that it couldn't access OneNote and identifies the specific reason for the failure (\"revisa el token de acceso (MS_GRAPH_REFRESH_TOKEN)\"). This information is crucial for the user or system administrator to diagnose and resolve the issue, making the response helpful and useful.",
+                    "score": 1.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___b3b8387f-4a83-4b3e-a256-2519dce79501",
+      "session_details": {
+        "id": "___eval___session___b3b8387f-4a83-4b3e-a256-2519dce79501",
+        "app_name": "app",
+        "user_id": "eval_user_es_03",
+        "state": {
+          "__llm_request_key__": "f3a24339-0e0c-4633-9915-bc1ea540bf34"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Busca notas de 'Sprint 24' y extrae tareas pendientes con responsable y fecha límite si aparecen.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-83f79afb-ef44-4d8e-ac6d-6ea1327a92b7",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "0e230f41-5b9a-4865-aec1-6aba5382ac30",
+            "timestamp": 1785152693.8654165
+          },
+          {
+            "model_version": "gemini-2.5-flash",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-42cce0cd-cf47-4e42-9cc7-2c0120afbb67",
+                    "args": {
+                      "search": "Sprint 24"
+                    },
+                    "name": "list_pages",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "CukEAY89a1_V3uO2yb0eqXFFUVNOoeQaAK8DYAlVbzzQwVYYC3UNSR-xR3lfyL-uD_P2MffEfHiJswKMuNABUzp39mnWrFIVgKTF4LJDqVpGN4nqdMvwmH9zH43_c-_MegSEr2vnaJlrNAj34X8DZj3dRyB3-WucMqcMLbuPWw9iAJp6MYKPwr_7rGnIrPhH5N0DjfY_hwJ_pRaMXSxjkLRpaEuywLHYn4UGzEWBl-ZUYUnp4KoHWypxB7lyriix8rlRujDPHTxMhyrUOlUHNcShweV6TfWE6OCx6TkQtPHRveLCaZT7rp3VYC5uXIcJVIkSsc4RVZnTnhgWPelozHOLWf9yGRGNbnG18itEI9M8SwODkNlsaNo56v63lOHMzfVwed_cptyeFrUWmxD-08ER7TcHQeYhs_phXNxETuYxlEKAgwFaKk9umRD9XCdoKecZ7u5orD0n89UA1DWz7cudSQPeSjg1DgqeKHjw7MZPhip_5ObCAmhLGK-LCDHRgabI9j79TnONNaXAL_nC32tPBTY7-lfmbhe6-PjB3HIF-w_LM1F6HC1_xqG8MEtG_nskCBk-j1oABLrQoQXtjGMUBdsbvObUT88iykTsnEy1gpB7vpWolmn75l3PuvAGwd8b4vjnjYinwzMJo15jN6SDdecB0Ffzz-aOaZREU8PLTU3ctFNoNkIGPsXmoVxJYeEHiSPbKKXp9UJrGt9Zah73ABmK6lMTsPeiu-vEbVhrPmzTuMjBqkGP0PH2GN1_WniKVDaZt8UHTNCBjJlYxdt92kWaNVKpMVHOr1o3P-iIFDNuoGs8Jb3Ie3c=",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "92b8c6cd-a0ea-4c48-9ab4-7743c7ce4d29"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 8,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 8
+                }
+              ],
+              "prompt_token_count": 295,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 295
+                }
+              ],
+              "thoughts_token_count": 151,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 454,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": -3.136995553970337,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-83f79afb-ef44-4d8e-ac6d-6ea1327a92b7",
+            "author": "asistente_notas",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "92b8c6cd-a0ea-4c48-9ab4-7743c7ce4d29"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "700e4ffd-3fca-4b1c-be58-90263d61d40e",
+            "timestamp": 1785152693.8664167
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-42cce0cd-cf47-4e42-9cc7-2c0120afbb67",
+                    "name": "list_pages",
+                    "response": {
+                      "status": "error",
+                      "error_message": "No se pudo obtener acceso a OneNote (revisar MS_GRAPH_REFRESH_TOKEN)."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-83f79afb-ef44-4d8e-ac6d-6ea1327a92b7",
+            "author": "asistente_notas",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "b195dac3-0d0c-4877-8f9b-08b13e94ddfe",
+            "timestamp": 1785152699.2120433
+          },
+          {
+            "model_version": "gemini-2.5-flash",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "No se pudo acceder a OneNote. Por favor, revisa el token de acceso (MS_GRAPH_REFRESH_TOKEN) para que pueda buscar las notas de 'Sprint 24'.",
+                  "thought": null,
+                  "thought_signature": "Co0DAY89a1-7no-a13Ft8dZlFigK6ZEt2h586SFetxMRYaYn5Xk8bzUUJ_U_wyNoy4w_y-F9PFi47-ZXN5VvNZaYYdAoa6jm3vlglB5xEYT5O7V2CO-DOWWiSARap62bhHXu-AKfMI3AgTLGIPiIAUg9Xilnm106QYb-BaPLfKdm-CdNWASE5h8mZ586GXdvrzJjcPzBq62wDGPq4gfaw3tbLGq6cQdFIzqUePWRrxUo7KQKOXrkiycS8SRyG06YNXgAcOyTJcGGZOdDNKrzSMwrLDM3slgTjvRRAnIZgZxL2Yp7k5c5Ue8xesHXPrBBu-qR2WQci0mQ-IeSigzwF0NYIG3QqPtO0v-RTS0XdZWdE_b8RCU88G1IghRBroNyFy9FinU4WX3cmkV8BfSz9PQHsN2vxwZN6VNx7IyX6S8Zhc_aUb80UZh__fBJ2VEREKO3aDWJ5qMck2g_8wY6J5nfTU26Vz8agl7cTrO4PWEmZQBMlkCGAC9TLlNuvrrvyeq7lLh2BhauUXhpMF_gug==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "f3a24339-0e0c-4633-9915-bc1ea540bf34"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 40,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 40
+                }
+              ],
+              "prompt_token_count": 483,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 483
+                }
+              ],
+              "thoughts_token_count": 84,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 607,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": -0.576814603805542,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-83f79afb-ef44-4d8e-ac6d-6ea1327a92b7",
+            "author": "asistente_notas",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "f3a24339-0e0c-4633-9915-bc1ea540bf34"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "3177074a-5644-45ad-9afe-796e7076754b",
+            "timestamp": 1785152699.2131345
+          }
+        ],
+        "last_update_time": 1785152699.2131345
+      },
+      "user_id": "eval_user_es_03"
+    }
+  ],
+  "creation_timestamp": 1785152733.670011
+}

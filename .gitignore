@@ -1,0 +1,95 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.local
+.env*.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Development & Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+pytest.ini
+.hypothesis/
+
+# Jupyter & Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Logs & Temporary Files
+*.log
+*.log.*
+logs/
+tmp/
+temp/
+
+# Synthetic/test data
+synthetic_data/
+test_output/
+eval_output/
+
+# Deployment artifacts
+deployment_log.txt
+deploy_log.txt
+deploy_windows.py
+deploy_api.py
+update_agent.py
+
+# Build outputs
+out/
+out-tsc/
+dist/
+bazel-out/
+
+# Cloud-specific (local only, not for git)
+.google/
+.gcloud/
+credentials.json
+service-account-key.json
+
+# Project-specific temporary
+asistente-notas/deployment_log.txt
+asistente-notas/deploy_log.txt
+asistente-notas/.venv/
+asistente-notas/.env
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride

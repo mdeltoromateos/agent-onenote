@@ -1,0 +1,168 @@
+{
+  "eval_set_id": "onenote_spanish_eval",
+  "name": "OneNote Agent Evaluation (Spanish)",
+  "description": "Evalset en español para validar un agente que responde usando contenido de OneNote.",
+  "eval_cases": [
+    {
+      "eval_id": "capability_intro_es",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Hola, ¿cómo puedes ayudarme con mis notas de OneNote?"
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user_es_01",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "resume_reunion_cliente",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Hazme un resumen de la página titulada 'Reunión Cliente Acme 2026-06-12' y lista los acuerdos en viñetas."
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user_es_02",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "extraer_tareas_con_fecha",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Busca notas de 'Sprint 24' y extrae tareas pendientes con responsable y fecha límite si aparecen."
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user_es_03",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "comparar_dos_fuentes",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Compara las decisiones de 'Arquitectura API v1' y 'Arquitectura API v2' y dime qué cambió."
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user_es_04",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "pregunta_fuera_de_notas",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "¿Cuál es el presupuesto de marketing para 2027? Si no está en mis notas, dímelo claramente."
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user_es_05",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "respuesta_con_citas",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Necesito los próximos hitos del proyecto Fenix y quiero que cites el título exacto de cada página usada."
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user_es_06",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "seguimiento_con_contexto",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Resume la nota 'Plan Trimestral Producto'."
+              }
+            ]
+          }
+        },
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Ahora conviértelo en 5 acciones concretas priorizadas de mayor a menor impacto."
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user_es_07",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "normalizar_informacion_dispersa",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Busca páginas relacionadas con 'onboarding' y crea una checklist única sin duplicados."
+              }
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user_es_08",
+        "state": {}
+      }
+    }
+  ]
+}

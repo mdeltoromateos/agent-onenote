@@ -1,0 +1,928 @@
+{
+  "eval_set_result_id": "app_onenote_spanish_eval_1785152743.7840867",
+  "eval_set_result_name": "app_onenote_spanish_eval_1785152743.7840867",
+  "eval_set_id": "onenote_spanish_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "onenote_spanish_eval",
+      "eval_set_id": "onenote_spanish_eval",
+      "eval_id": "comparar_dos_fuentes",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8,
+            "judgeModelOptions": {
+              "judgeModel": "gemini-2.5-flash",
+              "numSamples": 1
+            },
+            "rubrics": [
+              {
+                "rubricId": "relevance",
+                "rubricContent": {
+                  "textProperty": "The response directly addresses the user's query."
+                }
+              },
+              {
+                "rubricId": "helpfulness",
+                "rubricContent": {
+                  "textProperty": "The response is helpful and provides useful information."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "relevance",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "helpfulness",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-80d6f07a-42d1-4ece-af32-aeb69e035aab",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Compara las decisiones de 'Arquitectura API v1' y 'Arquitectura API v2' y dime qué cambió.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "No puedo acceder a OneNote para recuperar la información de 'Arquitectura API v1' y 'Arquitectura API v2'. Por favor, asegúrate de que puedo acceder a tus notas.",
+                  "thought": null,
+                  "thought_signature": "CqwCAY89a18XEy12BDoV4Lsytr-4l521DFs346C5wyPbNyETDpyQlhOX3xaeFqx7SZ_D8BXbCjnti2222EM4-bjntJyCspNVtDC_47iegTTKOrn6OFCgNJ57m2b0ZVQyXGrMEP7jKkp7COgH8yEMqfTDy1eI40ujKWVTUFOnSJmMpIupUOa7ZZYSsHbq5yhl1f4xuwPz5tiZ9CFPUy04jFPmtnO5XJk7Mt1HGjG-0xWWgoL-vOYRipCDKRNNa0MDZQfUdx4QT5CcpJmla54tOW4x8XyOQ3xd1K4xC7Jod4Tsbpd0TbbqqXOqqKd6eFPSnRW_V1no_ZBbc5sHNPZTHmCC6TXTNKvX5jmZTrOdRBve2l7XDnoBbUJSlRn6zIPqp5WdmLlGoIy_E_oajvfZ",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "asistente_notas",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-a221da6b-7376-4f6d-9572-32b009828bc8",
+                          "args": {
+                            "search": "Arquitectura API v1"
+                          },
+                          "name": "list_pages",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "CqYDAY89a1_ry8SqEERxro1bgLwIj_2kx6fXzfh_kfIgE16b2PMo36Va-pxJreTnZWHOYiXEEbUVJpahr05JKg0AnEwOgv-SlciejDuug-cwMIf_hgp1fidtD3C8DPMNQ5c_QIzX71AWKu6VlgDFWReHu5-rRGVKN8xTPEieIY0PTV9y3ys4tRGiJBpGqgPyg4dpGsA0AfCML24Q_cXM2L-HC-N0-e0L5fRQ5REpIjXMF0DkUTWK2QkvgY-0Em9rMQCCFq-DdKYc3iVr8NG3ClaWlnp0yxcvSfvEM09WabQr-j64rw1a37GVsIwJLTkqhCBZes3VhamrdwOblj5vJiafFLM7NFrfZe625LPYf-obz_E3cNri9e-O6Dg2Wh_xmtPWq3rn88CjL3Npd6rqL6TjXpnmlQJcKeLc2ljEmKPHdOERoD_361FnZLrxopt0LiuiqPKct9xLQQdm2vhuyF46gbMeeIikZ-uMvVhqnaT0Aol9W2EcZK_Cwf3iY9q7vnXxaUhCeZ8adeuh1ZMXqhGDasl3UCfADMXxvZF_gqoNvQZ0EY2SReU=",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      },
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-8d53d298-8fae-4c71-bbcf-d9eef2c19958",
+                          "args": {
+                            "search": "Arquitectura API v2"
+                          },
+                          "name": "list_pages",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "asistente_notas",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-a221da6b-7376-4f6d-9572-32b009828bc8",
+                          "name": "list_pages",
+                          "response": {
+                            "status": "error",
+                            "error_message": "No se pudo obtener acceso a OneNote (revisar MS_GRAPH_REFRESH_TOKEN)."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      },
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-8d53d298-8fae-4c71-bbcf-d9eef2c19958",
+                          "name": "list_pages",
+                          "response": {
+                            "status": "error",
+                            "error_message": "No se pudo obtener acceso a OneNote (revisar MS_GRAPH_REFRESH_TOKEN)."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1785152709.9997733,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "asistente_notas": {
+                  "name": "asistente_notas",
+                  "instructions": "Eres \"Asistente de Notas\", un asistente que responde preguntas\ndel usuario basándote EXCLUSIVAMENTE en el contenido de sus cuadernos de OneNote.\n\nCómo trabajar:\n1. Si necesitas saber qué hay disponible, usa `list_notebooks` o `list_pages`.\n   Puedes pasar un término a `list_pages` para filtrar por título.\n2. Antes de responder, identifica las páginas relevantes y lee su contenido con\n   `get_page_content`. No respondas de memoria: lee primero.\n3. Responde en español, de forma concreta, y cita siempre el título de las\n   páginas que has usado como fuente.\n4. Si la información no aparece en las notas, dilo con claridad; nunca inventes.\n\nNo reveles el token ni detalles técnicos internos al usuario.\n\n\nYou are an agent. Your internal name is \"asistente_notas\". The description about you is \"Responde preguntas sobre el contenido de OneNote del usuario.\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Lista los cuadernos de OneNote.",
+                          "name": "list_notebooks",
+                          "parameters": null,
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Lista paginas de OneNote, opcionalmente filtradas por titulo.",
+                          "name": "list_pages",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "search": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": "",
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Devuelve texto plano del contenido de una pagina de OneNote.",
+                          "name": "get_page_content",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "page_id": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "page_id"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Compara las decisiones de 'Arquitectura API v1' y 'Arquitectura API v2' y dime qué cambió.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": null,
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8,
+                "judgeModelOptions": {
+                  "judgeModel": "gemini-2.5-flash",
+                  "numSamples": 1
+                },
+                "rubrics": [
+                  {
+                    "rubricId": "relevance",
+                    "rubricContent": {
+                      "textProperty": "The response directly addresses the user's query."
+                    }
+                  },
+                  {
+                    "rubricId": "helpfulness",
+                    "rubricContent": {
+                      "textProperty": "The response is helpful and provides useful information."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "relevance",
+                    "rationale": "The agent directly addresses the user's query by explaining why it cannot perform the comparison (due to an access error to OneNote for both required pages). This directly answers the implicit question of why the comparison cannot be provided.",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "helpfulness",
+                    "rationale": "The response is helpful because it clearly communicates the reason for its inability to answer the query (access error to OneNote) and provides a useful instruction to the user on how to resolve the issue (\"Por favor, asegúrate de que puedo acceder a tus notas.\"). This allows the user to take corrective action, which is valuable information.",
+                    "score": 1.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___3584bcf0-5279-4278-b91b-8cbf4682b4c0",
+      "session_details": {
+        "id": "___eval___session___3584bcf0-5279-4278-b91b-8cbf4682b4c0",
+        "app_name": "app",
+        "user_id": "eval_user_es_04",
+        "state": {
+          "__llm_request_key__": "2cf118b4-eeb1-4061-863e-b58473439a18"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Compara las decisiones de 'Arquitectura API v1' y 'Arquitectura API v2' y dime qué cambió.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-80d6f07a-42d1-4ece-af32-aeb69e035aab",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "a7db155f-aa3a-477e-b058-6eb2d31e5f4e",
+            "timestamp": 1785152705.0058897
+          },
+          {
+            "model_version": "gemini-2.5-flash",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-a221da6b-7376-4f6d-9572-32b009828bc8",
+                    "args": {
+                      "search": "Arquitectura API v1"
+                    },
+                    "name": "list_pages",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "CqYDAY89a1_ry8SqEERxro1bgLwIj_2kx6fXzfh_kfIgE16b2PMo36Va-pxJreTnZWHOYiXEEbUVJpahr05JKg0AnEwOgv-SlciejDuug-cwMIf_hgp1fidtD3C8DPMNQ5c_QIzX71AWKu6VlgDFWReHu5-rRGVKN8xTPEieIY0PTV9y3ys4tRGiJBpGqgPyg4dpGsA0AfCML24Q_cXM2L-HC-N0-e0L5fRQ5REpIjXMF0DkUTWK2QkvgY-0Em9rMQCCFq-DdKYc3iVr8NG3ClaWlnp0yxcvSfvEM09WabQr-j64rw1a37GVsIwJLTkqhCBZes3VhamrdwOblj5vJiafFLM7NFrfZe625LPYf-obz_E3cNri9e-O6Dg2Wh_xmtPWq3rn88CjL3Npd6rqL6TjXpnmlQJcKeLc2ljEmKPHdOERoD_361FnZLrxopt0LiuiqPKct9xLQQdm2vhuyF46gbMeeIikZ-uMvVhqnaT0Aol9W2EcZK_Cwf3iY9q7vnXxaUhCeZ8adeuh1ZMXqhGDasl3UCfADMXxvZF_gqoNvQZ0EY2SReU=",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                },
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-8d53d298-8fae-4c71-bbcf-d9eef2c19958",
+                    "args": {
+                      "search": "Arquitectura API v2"
+                    },
+                    "name": "list_pages",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "181a8df3-933c-4128-986d-515a253aea7b"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 18,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 18
+                }
+              ],
+              "prompt_token_count": 297,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 297
+                }
+              ],
+              "thoughts_token_count": 96,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 411,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": -1.1605044470893011,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-80d6f07a-42d1-4ece-af32-aeb69e035aab",
+            "author": "asistente_notas",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "181a8df3-933c-4128-986d-515a253aea7b"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "139e2300-a1a7-4ac4-8efc-07b2ba43045c",
+            "timestamp": 1785152705.0058897
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-a221da6b-7376-4f6d-9572-32b009828bc8",
+                    "name": "list_pages",
+                    "response": {
+                      "status": "error",
+                      "error_message": "No se pudo obtener acceso a OneNote (revisar MS_GRAPH_REFRESH_TOKEN)."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                },
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-8d53d298-8fae-4c71-bbcf-d9eef2c19958",
+                    "name": "list_pages",
+                    "response": {
+                      "status": "error",
+                      "error_message": "No se pudo obtener acceso a OneNote (revisar MS_GRAPH_REFRESH_TOKEN)."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-80d6f07a-42d1-4ece-af32-aeb69e035aab",
+            "author": "asistente_notas",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "07ed4bf7-b5ca-467e-858c-545b2a838e32",
+            "timestamp": 1785152709.9997733
+          },
+          {
+            "model_version": "gemini-2.5-flash",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "No puedo acceder a OneNote para recuperar la información de 'Arquitectura API v1' y 'Arquitectura API v2'. Por favor, asegúrate de que puedo acceder a tus notas.",
+                  "thought": null,
+                  "thought_signature": "CqwCAY89a18XEy12BDoV4Lsytr-4l521DFs346C5wyPbNyETDpyQlhOX3xaeFqx7SZ_D8BXbCjnti2222EM4-bjntJyCspNVtDC_47iegTTKOrn6OFCgNJ57m2b0ZVQyXGrMEP7jKkp7COgH8yEMqfTDy1eI40ujKWVTUFOnSJmMpIupUOa7ZZYSsHbq5yhl1f4xuwPz5tiZ9CFPUy04jFPmtnO5XJk7Mt1HGjG-0xWWgoL-vOYRipCDKRNNa0MDZQfUdx4QT5CcpJmla54tOW4x8XyOQ3xd1K4xC7Jod4Tsbpd0TbbqqXOqqKd6eFPSnRW_V1no_ZBbc5sHNPZTHmCC6TXTNKvX5jmZTrOdRBve2l7XDnoBbUJSlRn6zIPqp5WdmLlGoIy_E_oajvfZ",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "2cf118b4-eeb1-4061-863e-b58473439a18"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 39,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 39
+                }
+              ],
+              "prompt_token_count": 469,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 469
+                }
+              ],
+              "thoughts_token_count": 60,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 568,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": -0.7243944803873698,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-80d6f07a-42d1-4ece-af32-aeb69e035aab",
+            "author": "asistente_notas",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "2cf118b4-eeb1-4061-863e-b58473439a18"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "2cc9b77a-8862-4b9b-8bc3-d14ac230fa98",
+            "timestamp": 1785152710.0037675
+          }
+        ],
+        "last_update_time": 1785152710.0037675
+      },
+      "user_id": "eval_user_es_04"
+    }
+  ],
+  "creation_timestamp": 1785152743.7840867
+}
